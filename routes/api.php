@@ -49,6 +49,13 @@ Route::put('/buses/{id}', function (Request $request, $id){
         'data' => $bus
     ]);
 });
+Route::get('/buses/{id}', function ($id){
+    $bus = Bus::find($id);
+    return response()->json([
+        'message' => 'Success',
+        'data' => $bus
+    ]);
+});
 Route::delete('/buses/{id}', function ($id){
     Bus::destroy($id);
     return response()->json([
