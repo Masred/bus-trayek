@@ -8,5 +8,4 @@
 
 ### Trayek
 1. `/api/trayek` | GET | POST
-2. `/api/trayek/{id}` | PUT
-3. `/api/trayek/{id}` | DELETE
+2. `/api/trayek/{id}` | PUT | DELETE
